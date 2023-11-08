@@ -1,0 +1,513 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: OPELZAFIRA ECU IPC CIM UEC REC DIS EHU_TC EHU ECC SDM EHS PAS TPMS SLM PEPS SAC EHHT
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 OPELZAFIRA
+ SG_ Sensors5_8 : 48|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ NewSignal_0026 : 0|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ BusWakeUp : 0|0@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ Unknown0 : 6|2@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ Unknown1 : 12|4@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ Unknown2 : 16|4@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ Unknown2h : 22|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ Unknown3 : 30|2@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ Unknown4 : 32|4@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ EngineStatus3 : 16|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ Brake : 14|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+
+BO_ 64 ID_040: 8 CIM
+
+BO_ 72 ID_048: 8 CIM
+
+BO_ 80 ID_050: 8 CIM
+
+BO_ 104 ID_068: 8 CIM
+
+BO_ 144 ID_090: 8 SDM
+
+BO_ 256 Bus_WakeUp: 0 OPELZAFIRA
+
+BO_ 257 ID_101: 8 OPELZAFIRA
+
+BO_ 264 EngineState: 8 CIM
+ SG_ EngineMotionState : 0|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ RPM : 15|16@0+ (0.25,0) [0|0] ""  OPELZAFIRA
+ SG_ Speed : 39|16@0+ (0.0078125,0) [0|0] " km/h"  OPELZAFIRA
+
+BO_ 272 DistanceTraveled: 5 CIM
+ SG_ FrontLeftWheel : 15|16@0+ (0.0015748,0) [0|0] " m"  OPELZAFIRA
+ SG_ FrontRightWheel : 31|16@0+ (0.0015748,0) [0|0] " m"  OPELZAFIRA
+
+BO_ 277 BrakeSwitch: 1 CIM
+ SG_ BrakeSwitch1 : 2|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ BrakeSwitch2 : 4|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ ClutchSwitch : 1|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+
+BO_ 282 Gear: 7 CIM
+ SG_ LeftDigit : 0|6@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ RightDigit : 24|6@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ EnableDisplaySecond : 23|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ EnableDisplay : 8|2@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ Arrows : 38|2@1+ (1,0) [0|0] ""  OPELZAFIRA
+
+BO_ 304 FuelInjection: 7 CIM
+ SG_ Fuelinjection : 15|16@0+ (1,0) [0|0] ""  OPELZAFIRA
+
+BO_ 309 DoorLocksControl: 4 CIM
+ SG_ KeyButtonsStatus : 7|8@0+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ Button : 15|8@0+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ KeyID : 23|16@0+ (1,0) [0|0] ""  OPELZAFIRA
+
+BO_ 325 EngineStatus: 8 CIM
+ SG_ EngineStatus1 : 4|4@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ EngineStatus2 : 8|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ TempCoolant : 24|8@1+ (1,-40) [0|0] " C"  OPELZAFIRA
+ SG_ EngineStatus4 : 32|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ CruiseControl : 40|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ WinterMode : 2|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ Sport_or_ESPONOFmaybe : 3|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ Oil_Pressure_RED : 18|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ Oil_Level_YELLOW : 21|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ SVS_Screw : 22|2@1+ (1,0) [0|0] ""  OPELZAFIRA
+
+BO_ 336 ID_150: 8 OPELZAFIRA
+
+BO_ 341 AC_Status: 8 DIS
+ SG_ AC_Status : 0|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ AC_Pressure : 8|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+
+BO_ 352 RemoteControlWindows: 4 CIM
+ SG_ KeyNumber : 0|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ KeyCode : 23|16@0+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ RCWindows : 8|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+
+BO_ 368 Ignitionkey: 4 CIM
+ SG_ IgnitionKey : 0|7@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ KeyCode : 15|16@0+ (1,0) [0|0] ""  OPELZAFIRA
+
+BO_ 373 SteeringButton: 8 CIM
+ SG_ Left_HighBeamLight_Horn : 0|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ Right_Wipers : 8|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ Turn : 32|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ Buttons : 40|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ Left_knob : 48|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ Right_knob : 56|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+
+BO_ 392 SteeringWheelAngle: 3 CIM
+ SG_ SteeringAngle : 8|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+
+BO_ 400 Milleage: 7 CIM
+ SG_ Milleage : 23|24@0+ (0.015625,0) [0|0] " km"  OPELZAFIRA
+
+BO_ 560 DoorStatus: 7 OPELZAFIRA
+ SG_ LeftFrontDoorOpen : 22|1@1+ (1,0) [0|1] ""  OPELZAFIRA
+ SG_ RightFrontDoorOpen : 20|1@1+ (1,0) [0|1] ""  OPELZAFIRA
+ SG_ LeftRearDoorOpen : 14|1@1+ (1,0) [0|1] ""  OPELZAFIRA
+ SG_ RightRearDoorOpen : 12|1@1+ (1,0) [0|1] ""  OPELZAFIRA
+ SG_ BootOpen : 18|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+
+BO_ 565 Illumination: 2 IPC
+ SG_ LED_Brightness : 8|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+
+BO_ 581 CIM_Service_Request: 8 CIM
+
+BO_ 582 DIS_Service_Request: 8 DIS
+
+BO_ 583 EHHT_Servise_Request: 8 EHHT
+
+BO_ 584 SAC_Service_Request: 8 SAC
+
+BO_ 585 ID249: 8 OPELZAFIRA
+
+BO_ 586 PEPS_Service_Request: 8 PEPS
+
+BO_ 589 EHS_Service_Request: 8 EHS
+
+BO_ 591 TPMS_Service_Request: 8 TPMS
+
+BO_ 592 UEC_Service_Request: 8 UEC
+
+BO_ 593 REC_Service_Request: 8 REC
+
+BO_ 597 IPC_Service_Request: 8 IPC
+
+BO_ 599 SDM_Airbag_Request: 8 SDM
+
+BO_ 603 PAS_Service_Request: 8 PAS
+
+BO_ 604 SLM_Service_Request: 8 SLM
+
+BO_ 608 TurnSignal: 3 CIM
+ SG_ TurnLight : 4|3@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ TimeOff : 8|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ TimeOn : 16|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+
+BO_ 629 ID_275: 8 OPELZAFIRA
+
+BO_ 640 CIM_Buzzer: 8 CIM
+
+BO_ 645 IPC_285: 5 IPC
+
+BO_ 661 ID_295: 8 OPELZAFIRA
+
+BO_ 773 IPC_Buttons_LightsSwitches: 7 IPC
+ SG_ Parktronic_Button : 14|1@1+ (1,0) [0|0] "" OPELZAFIRA
+ SG_ RearFog_Button : 20|1@1+ (1,0) [0|0] "" OPELZAFIRA
+ SG_ FrontFog_Button : 21|1@1+ (1,0) [0|0] "" OPELZAFIRA
+ SG_ ParkingLight_EncoderSwitch : 22|1@1+ (1,0) [0|0] "" OPELZAFIRA
+ SG_ LowBeam_EncoderSwitch : 23|1@1+ (1,0) [0|0] "" OPELZAFIRA
+ SG_ Hazard_Button : 28|1@1+ (1,0) [0|0] "" OPELZAFIRA
+ SG_ SeatHeating_Button : 31|1@1+ (1,0) [0|0] "" OPELZAFIRA
+ SG_ Sport_Button : 32|8@1+ (1,0) [0|0] "" OPELZAFIRA
+ SG_ Autolight_EncoderSwitch : 44|1@1+ (1,0) [0|0] "" OPELZAFIRA
+ SG_ CentralLock_Button : 48|1@1+ (1,0) [0|0] "" OPELZAFIRA
+ SG_ DDS_Button : 26|1@1+ (1,0) [0|0] "" OPELZAFIRA
+ SG_ ESPOFF : 27|1@1+ (1,0) [0|0] "" OPELZAFIRA
+
+BO_ 789 ID_315: 8 IPC
+
+BO_ 816 ID_330: 8 OPELZAFIRA
+
+BO_ 832 UEC_FrontLamp_WarningStatus: 2 UEC
+ SG_ LowBeamRight : 0|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ LowBeamLeft : 1|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ HighBeamRight : 2|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ HighBeamLeft : 3|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ FrontFogRight : 4|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ FrontFogLeft : 5|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ FrontTurnRight : 6|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ FrontTurnLeft : 7|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ FrontParkingRight : 14|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ FrontParkingLeft : 0|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+
+BO_ 848 UEC_WarningStatus: 4 UEC
+ SG_ LightsFogOFF : 6|1@1- (1,0) [0|1] ""  OPELZAFIRA
+ SG_ RearGear : 4|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ WasherWaterLevel : 7|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ CoolantLevel : 11|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ OutdoorTemp : 10|11@0+ (0.125,-40) [0|0] "C"  OPELZAFIRA
+
+BO_ 864 REC_RearLamp_WarningStatus: 3 REC
+ SG_ Clutch_maybe_Wrong : 16|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ RearParkingRight : 0|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ RearParkingLeft : 1|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ RearReverseRight : 2|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ RearReverseLeft : 3|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ RearTurnRight : 4|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ RearTurnLeft : 5|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ RearBrakeRight : 6|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ RearBrakeLeft : 7|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ RearFogLeft : 8|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ RearBrakeCenter : 15|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ RearFogRight : 23|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+
+BO_ 880 Warning_and_LampStatus: 8 OPELZAFIRA
+ SG_ HandBrake : 8|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ RearFogTelltale_IPC_maybe : 15|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+
+BO_ 885 Fuel: 2 OPELZAFIRA
+ SG_ Fuel_Level : 15|8@0+ (-0.5,94) [0|0] " l"  OPELZAFIRA
+
+BO_ 1024 ID_400: 8 OPELZAFIRA
+
+BO_ 1061 ID_425: 8 OPELZAFIRA
+
+BO_ 1072 ParktronicStatus: 8 PAS
+ SG_ Sensors M : 0|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ FLLen m1 : 8|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ FLCLen m2 : 8|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ FRCLen m4 : 8|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ FRLen m8 : 8|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ RLLen m16 : 16|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ RLCLen m32 : 24|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ RRCLen m64 : 32|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ RRLen m128 : 40|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+
+BO_ 1088 DateTime: 8 DIS
+ SG_ Hour : 0|8@1+ (0.125,0) [0|0] " h"  OPELZAFIRA
+ SG_ Minute : 8|8@1+ (0.25,0) [0|0] " m"  OPELZAFIRA
+ SG_ Seconds : 16|8@1+ (0.25,0) [0|0] " s"  OPELZAFIRA
+ SG_ Day : 40|8@1+ (0.125,0) [0|0] ""  OPELZAFIRA
+ SG_ Mounth : 48|8@1+ (0.0625,0) [0|0] ""  OPELZAFIRA
+ SG_ Year : 56|8@1+ (1,2000) [0|0] ""  OPELZAFIRA
+ SG_ Unknown3B : 24|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+
+BO_ 1093 Temp_Outdoor: 2 CIM
+ SG_ Temp_Outdoor : 15|8@0+ (0.5,-40) [0|0] " C"  OPELZAFIRA
+
+BO_ 1104 QuickHeatStatus: 3 EHS
+ SG_ QH_Status : 0|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ QH_HeaterStatus : 16|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+
+BO_ 1280 Voltage: 2 OPELZAFIRA
+ SG_ Voltage : 8|8@1+ (0.1,2.8) [0|0] " V"  OPELZAFIRA
+
+BO_ 1328 TPMS: 8 TPMS
+ SG_ TPMS_StateF : 0|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ TPMS_StateR : 8|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ FL : 16|8@1+ (0.25,0) [0|0] " Bar"  OPELZAFIRA
+ SG_ FR : 24|8@1+ (0.25,0) [0|0] " Bar"  OPELZAFIRA
+ SG_ RL : 32|8@1+ (0.25,0) [0|0] " Bar"  OPELZAFIRA
+ SG_ RR : 40|8@1+ (0.25,0) [0|0] " Bar"  OPELZAFIRA
+ SG_ TPMS_OK : 48|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ TPMS_Status : 56|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+
+BO_ 1312 ID_520: 8 IPC
+
+BO_ 1329 ID_531: 8 OPELZAFIRA
+
+BO_ 1349 CIM_Service_UUDT_Response: 8 CIM
+
+BO_ 1350 DIS_Service_UUDT_Response: 8 DIS
+
+BO_ 1352 SAC_Service_UUDT_Response: 8 SAC
+
+BO_ 1357 EHS_Service_UUDT_Response: 8 EHS
+
+BO_ 1359 TPMS_Service_UUDT_Response: 8 TPMS
+
+BO_ 1360 UEC_Service_UUDT_Response: 8 UEC
+
+BO_ 1361 REC_Service_UUDT_Response: 8 REC
+
+BO_ 1365 IPC_Service_UUDT_Response: 8 IPC
+
+BO_ 1367 SDM_Service_UUDT_Response: 8 SDM
+
+BO_ 1371 PAS_Service_UUDT_Response: 8 PAS
+
+BO_ 1512 ECU_Service: 8 CIM
+
+BO_ 1573 CIM_Status: 8 CIM
+
+BO_ 1574 DIS_Status: 8 DIS
+
+BO_ 1579 ID_62B: 8 OPELZAFIRA
+
+BO_ 1584 UEC_Status: 8 UEC
+
+BO_ 1585 REC_Status: 8 REC
+
+BO_ 1589 IPC_Status: 8 IPC
+
+BO_ 1591 SDM_Status: 8 SDM
+
+BO_ 1605 CIM_Service_USDT_Response: 8 CIM
+
+BO_ 1606 DIS_Service_USDT_Response: 8 DIS
+
+BO_ 1608 SAC_Service_USDT_Response: 8 SAC
+
+BO_ 1613 EHS_Service_USDT_Response: 8 EHS
+
+BO_ 1615 TPMS_Service_USDT_Response: 8 TPMS
+
+BO_ 1616 UEC_Service_USDT_Response: 8 UEC
+
+BO_ 1617 REC_Service_USDT_Response: 8 REC
+
+BO_ 1621 IPC_Service_USDT_Response: 8 IPC
+
+BO_ 1623 SDM_Service_USDT_Response: 8 SDM
+
+BO_ 1627 PAS_Service_USDT_Response: 8 PAS
+
+
+
+CM_ BU_ ECU "MainEngine";
+CM_ BU_ IPC "Dashboard";
+CM_ BU_ CIM "UnderSteeringModule";
+CM_ BU_ UEC "Front (Under) Fuse Module";
+CM_ BU_ REC "Rear Fuse Module";
+CM_ BU_ DIS "Display CID/GID";
+CM_ BU_ EHU_TC "Touch&Connect";
+CM_ BU_ EHU "CD30MP3";
+CM_ BU_ ECC "ElectronicClimateControl";
+CM_ BU_ SDM "AirBag Module";
+CM_ BU_ EHS "Electrical Heater System - QuickHeat";
+CM_ BU_ PAS "Parktronic";
+CM_ BU_ TPMS "TPMS";
+CM_ BU_ SLM "SLM - AT LED";
+CM_ BU_ PEPS "Open&Start";
+CM_ BU_ SAC "Semi-Automatic Climate";
+CM_ BU_ EHHT "Electrohydraulic Hardtop for Astra-H
+";
+CM_ SG_ 3221225472 Unknown0 "???";
+CM_ SG_ 3221225472 Unknown1 "???";
+CM_ BO_ 257 "DIAG";
+CM_ BO_ 272 "";
+CM_ BO_ 277 "";
+CM_ BO_ 282 "for IPC";
+CM_ SG_ 282 EnableDisplaySecond "Enable Second Right Digit";
+CM_ BO_ 304 "";
+CM_ BO_ 309 "";
+CM_ SG_ 325 EngineStatus1 "";
+CM_ BO_ 341 "Need change factor to kPa";
+CM_ BO_ 352 "";
+CM_ BO_ 368 "";
+CM_ BO_ 373 "";
+CM_ BO_ 392 "";
+CM_ BO_ 400 "";
+CM_ BO_ 581 "";
+CM_ BO_ 582 "for DIS (Display) on SWCAN (GMLAN) (LSCAN)";
+CM_ BO_ 583 "for Astra-H EHHT Electrohydraulic Hardtop";
+CM_ BO_ 584 "Semi-Automatic Climate";
+CM_ BO_ 585 "";
+CM_ BO_ 586 "OpenStart";
+CM_ BO_ 589 "for EHS (Electrical Heater System - QuickHeat)";
+CM_ BO_ 591 "TPMS";
+CM_ BO_ 592 "";
+CM_ BO_ 597 "for IPC (Dashboard)";
+CM_ BO_ 599 "for SDM (Airbag)
+";
+CM_ BO_ 603 "for PAS (Parktronic)";
+CM_ BO_ 604 "Shift Lever Module for AT LED P-N-D-R";
+CM_ BO_ 608 "";
+CM_ SG_ 608 TurnLight "";
+CM_ SG_ 608 TimeOff "0-no pause,FF-very low";
+CM_ SG_ 608 TimeOn "0-very low, FF-always On";
+CM_ BO_ 640 "CIM Beeps";
+CM_ BO_ 645 "";
+CM_ BO_ 773 "";
+CM_ SG_ 773 SeatHeating_Button "2 buttons: Left or Rights";
+CM_ BO_ 832 "FrontRepeator Not Find";
+CM_ BO_ 848 "";
+CM_ BO_ 880 "IPC?";
+CM_ BO_ 885 "With Table for New Sensors , 
+Need Formula
+";
+CM_ SG_ 885 Fuel_Level "=(178-Fuel)/1.81 or (fuel-178)*0,5524862     its wrong maybe for old sensors 
+=94-Fuel/2 or Fuel*-0,5 + 94";
+CM_ BO_ 1072 "WrongMultiplexor";
+CM_ SG_ 1088 Unknown3B "???";
+CM_ BO_ 1093 "";
+CM_ BO_ 1104 "QuickHeat";
+CM_ BO_ 1280 "";
+CM_ BO_ 1328 "TPMS&DDS";
+CM_ BO_ 1349 "CIM";
+CM_ BO_ 1350 "DIS (Display) on SWCAN (GMLAN) (LSCAN)";
+CM_ BO_ 1352 "Semi-Automatic Climate";
+CM_ BO_ 1357 "QuickHeat";
+CM_ BO_ 1359 "TPMS";
+CM_ BO_ 1360 "UEC";
+CM_ BO_ 1361 "REC";
+CM_ BO_ 1365 "IPC (Dashboard)";
+CM_ BO_ 1367 "AirBag";
+CM_ BO_ 1371 "Parktronic";
+CM_ BO_ 1512 "Engine Service";
+CM_ BO_ 1573 "CIM";
+CM_ BO_ 1574 "DIS on GMLAN";
+CM_ BO_ 1584 "UEC";
+CM_ BO_ 1585 "REC";
+CM_ BO_ 1589 "IPC";
+CM_ BO_ 1591 "SDM";
+CM_ BO_ 1605 "CIM";
+CM_ BO_ 1606 "DIS (Display) on SWCAN (GMLAN) (LSCAN)";
+CM_ BO_ 1608 "Semi-Automatic Climate";
+CM_ BO_ 1613 "QuickHeat";
+CM_ BO_ 1615 "TPMS";
+CM_ BO_ 1616 "UEC";
+CM_ BO_ 1617 "REC";
+CM_ BO_ 1621 "IPC (Dashboard)";
+CM_ BO_ 1623 "AirBag";
+CM_ BO_ 1627 "Parktronic";
+BA_DEF_ BO_  "GenMsgBackgroundColor" STRING ;
+BA_DEF_ BO_  "GenMsgForegroundColor" STRING ;
+BA_DEF_ BO_  "matchingcriteria" INT 0 0;
+BA_DEF_ BO_  "filterlabeling" INT 0 0;
+BA_DEF_DEF_  "GenMsgBackgroundColor" "#ffffff";
+BA_DEF_DEF_  "GenMsgForegroundColor" "#000000";
+BA_DEF_DEF_  "matchingcriteria" 2;
+BA_DEF_DEF_  "filterlabeling" 1;
+VAL_ 264 EngineMotionState 0 "???" 1 "???" 2 "???" 3 "Engine Not  Running" 10 "???" 16 "Engine Stopped" 17 "???" 19 "Engine Run and Idle" 35 "Engine Running Not Idle" 67 "Engine Starting" 99 "Engine Starting" 136 "???" ;
+VAL_ 282 LeftDigit 0 "none" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "R" 9 "N" 10 "P" 11 "D" 12 "0" 13 "I" 14 "L" 15 "M" 16 "A" 63 "F" 17 "???" ;
+VAL_ 282 RightDigit 0 "0" 8 "1" 16 "2" 24 "3" 32 "4" 40 "5" 48 "6" 56 "7" ;
+VAL_ 282 EnableDisplaySecond 1 "Display Second Digit" ;
+VAL_ 282 EnableDisplay 0 "Display OFF" 1 "Display ON" 2 "Display Blink" ;
+VAL_ 282 Arrows 0 "No Arrows" 1 "Arrows Up" 2 "Arrows Down" 3 "Arrows Up&Down" ;
+VAL_ 309 KeyButtonsStatus 124 "pressed Open" 188 "pressed Close" 60 "Buttons release" ;
+VAL_ 309 Button 6 "Buttons on key" 0 "Buttons on Panel" ;
+VAL_ 325 EngineStatus2 1 "Check Engine Off" 2 " Check Engine Flash" 3 "Check Engine Flash Fast" 4 "Check Engine Flash Slow" 128 "ABS Errors" ;
+VAL_ 325 CruiseControl 4 "inactive" 6 "active" ;
+VAL_ 325 WinterMode 4 "Winter Mode ON" 0 "Winter Mode OFF" ;
+VAL_ 325 SVS_Screw 1 "SVS Check Car Screw ON" 2 "SVS Check Car Screw Flash" 3 "SVS Check Car Screw OFF'" ;
+VAL_ 341 AC_Status 0 "AC OFF" 2 "AC ON" ;
+VAL_ 368 IgnitionKey 32 "Key Not in Lock" 48 "Key Just Removed" 84 "Key In position Ignition (II) (After previous state)" 96 "Key Inserted (After previous state)" 112 "Key In Lock (After Ke  Is In 72H or 74H)" 114 "Key Is In position Comfort (I)" 116 "Key Is In position Ignition (II)" 118 "Key In position Starter (II+)" ;
+VAL_ 373 Left_HighBeamLight_Horn 0 "Lights&Horn OFF" 8 "Left SW PULL" 16 "Horn ON" 32 "Left SW PUSH" ;
+VAL_ 373 Right_Wipers 0 "Wipers Off" 16 "Wipers down" 160 "Wipers speed 1" 176 "Wipers speed 2" 208 "Wipers speed 3" 10 "Wipers Push (Rear)" ;
+VAL_ 373 Turn 1 "Turn Left 1" 2 "Turn Right 1" 3 "Turn Left 2" 4 "Turn Right 2" ;
+VAL_ 373 Buttons 1 "Volume UP ?" 2 "Volume DOWN ?" 4 "NEXT" 5 "PREV" 16 "Left knob UP ?" 32 "Left knob Down?" 48 "Left knob Pressed" 64 "???" 80 "Mode CD/Radio/AUX" ;
+VAL_ 373 Left_knob 1 "Left knob down?" 31 "Left knob up?" ;
+VAL_ 373 Right_knob 1 "VolumeUP?" 31 "Volume DOWN?" ;
+VAL_ 608 TurnLight 0 "Turn light OFF" 1 "All Turn light ON" 2 "Left Turn light ON" 3 "Right Turn light ON" 4 "All Turn light ON (Hazard?)" ;
+VAL_ 773 Parktronic_Button 1 "Pressed" ;
+VAL_ 773 RearFog_Button 1 "Pressed" ;
+VAL_ 773 FrontFog_Button 1 "Pressed" ;
+VAL_ 773 Sport_Button 16 "Normal" 58 "Short button Pressed Sport ON" 59 "Long Button Pressed (ESPOFF)" ;
+VAL_ 832 LowBeamRight 0 "OK" 1 "Error" ;
+VAL_ 832 LowBeamLeft 0 "OK" 1 "Error" ;
+VAL_ 832 HighBeamRight 0 "OK" 1 "Error" ;
+VAL_ 832 HighBeamLeft 0 "OK" 1 "Error" ;
+VAL_ 832 FrontFogRight 0 "OK" 1 "Error" ;
+VAL_ 832 FrontFogLeft 0 "OK" 1 "Error" ;
+VAL_ 832 FrontTurnRight 0 "OK" 1 "Error" ;
+VAL_ 832 FrontTurnLeft 0 "OK" 1 "Error" ;
+VAL_ 832 FrontParkingRight 0 "OK" 1 "Error" ;
+VAL_ 832 FrontParkingLeft 0 "OK" 1 "Error" ;
+VAL_ 848 LightsFogOFF 1 "On" 0 "Off" ;
+VAL_ 848 RearGear 1 "ON" 0 "OFF" ;
+VAL_ 848 WasherWaterLevel 0 "Normal" 1 "Low" ;
+VAL_ 848 CoolantLevel 0 "Normal" 1 "Low" ;
+VAL_ 864 Clutch_maybe_Wrong 40 "Clutch Pressed" ;
+VAL_ 864 RearParkingRight 0 "OK" 1 "Error" ;
+VAL_ 864 RearParkingLeft 0 "OK" 1 "Error" ;
+VAL_ 864 RearReverseRight 0 "OK" 1 "Error" ;
+VAL_ 864 RearReverseLeft 0 "OK" 1 "Error" ;
+VAL_ 864 RearTurnRight 0 "OK" 1 "Error" ;
+VAL_ 864 RearTurnLeft 0 "OK" 1 "Error" ;
+VAL_ 864 RearBrakeRight 0 "OK" 1 "Error" ;
+VAL_ 864 RearBrakeLeft 0 "OK" 1 "Error" ;
+VAL_ 864 RearFogLeft 0 "OK" 1 "Error" ;
+VAL_ 864 RearBrakeCenter 0 "OK" 1 "Error" ;
+VAL_ 864 RearFogRight 0 "OK" 1 "Error" ;
+VAL_ 880 HandBrake 0 "Down-OFF" 1 "Up-ON" ;
+VAL_ 880 RearFogTelltale_IPC_maybe 0 "OFF" 1 "ON" ;
+VAL_ 1104 QH_Status 0 "OFF" 1 "Working" ;
+VAL_ 1104 QH_HeaterStatus 64 "Heats: 1" 128 "Heats: 2" 192 "Heats: 3" 255 "Heats:4 (All)" ;
+VAL_ 1328 TPMS_OK 40 "TPMS_OK" ;
+VAL_ 1328 TPMS_Status 41 "TPMS_ON" 6 "DDS_TireLow_RED" 7 "DDS_OK" ;
+
