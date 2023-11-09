@@ -220,7 +220,8 @@ BO_ 848 UEC_WarningStatus: 4 UEC
  SG_ WasherWaterLevel : 7|1@1+ (1,0) [0|0] ""  OPELZAFIRA
  SG_ CoolantLevel : 11|1@1+ (1,0) [0|0] ""  OPELZAFIRA
  SG_ OutdoorTemp : 10|11@0+ (0.125,-40) [0|0] "C"  OPELZAFIRA
-
+ SG_ BrakeFluid : 13|1@1+ (1,0) [0|0] "" OPELZAFIRA
+ 
 BO_ 864 REC_RearLamp_WarningStatus: 3 REC
  SG_ Clutch_maybe_Wrong : 16|8@1+ (1,0) [0|0] ""  OPELZAFIRA
  SG_ RearParkingRight : 0|1@1+ (1,0) [0|0] ""  OPELZAFIRA
@@ -492,6 +493,7 @@ VAL_ 848 LightsFogOFF 1 "On" 0 "Off" ;
 VAL_ 848 RearGear 1 "ON" 0 "OFF" ;
 VAL_ 848 WasherWaterLevel 0 "Normal" 1 "Low" ;
 VAL_ 848 CoolantLevel 0 "Normal" 1 "Low" ;
+VAL_ 848 BrakeFluid 0 "Normal" 1 "Low" ;
 VAL_ 864 Clutch_maybe_Wrong 40 "Clutch Pressed" ;
 VAL_ 864 RearParkingRight 0 "OK" 1 "Error" ;
 VAL_ 864 RearParkingLeft 0 "OK" 1 "Error" ;
