@@ -76,6 +76,8 @@ BO_ 277 BrakeSwitch: 1 CIM
  SG_ BrakeSwitch1 : 2|1@1+ (1,0) [0|0] ""  OPELZAFIRA
  SG_ BrakeSwitch2 : 4|1@1+ (1,0) [0|0] ""  OPELZAFIRA
  SG_ ClutchSwitch : 1|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ BrakeliightSwitch_Warning_forDIS : 6|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BrakeliightSwitch2Warning_forDIS : 7|1@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 282 Gear: 7 CIM
  SG_ LeftDigit : 0|6@1+ (1,0) [0|0] ""  OPELZAFIRA
@@ -111,9 +113,10 @@ BO_ 341 AC_Status: 8 DIS
  SG_ AC_Pressure : 8|8@1+ (1,0) [0|0] ""  OPELZAFIRA
 
 BO_ 352 RemoteControlWindows: 4 CIM
- SG_ KeyNumber : 0|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ KeyNumber : 0|3@1+ (1,0) [0|0] ""  OPELZAFIRA
  SG_ KeyCode : 23|16@0+ (1,0) [0|0] ""  OPELZAFIRA
  SG_ RCWindows : 8|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ Battery_RC_Warning_forDIS : 3|1@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 368 Ignitionkey: 4 CIM
  SG_ IgnitionKey : 0|7@1+ (1,0) [0|0] ""  OPELZAFIRA
@@ -185,18 +188,18 @@ BO_ 645 IPC_285: 5 IPC
 BO_ 661 ID_295: 8 OPELZAFIRA
 
 BO_ 773 IPC_Buttons_LightsSwitches: 7 IPC
- SG_ Parktronic_Button : 14|1@1+ (1,0) [0|0] "" OPELZAFIRA
- SG_ RearFog_Button : 20|1@1+ (1,0) [0|0] "" OPELZAFIRA
- SG_ FrontFog_Button : 21|1@1+ (1,0) [0|0] "" OPELZAFIRA
- SG_ ParkingLight_EncoderSwitch : 22|1@1+ (1,0) [0|0] "" OPELZAFIRA
- SG_ LowBeam_EncoderSwitch : 23|1@1+ (1,0) [0|0] "" OPELZAFIRA
- SG_ Hazard_Button : 28|1@1+ (1,0) [0|0] "" OPELZAFIRA
- SG_ SeatHeating_Button : 31|1@1+ (1,0) [0|0] "" OPELZAFIRA
- SG_ Sport_Button : 32|8@1+ (1,0) [0|0] "" OPELZAFIRA
- SG_ Autolight_EncoderSwitch : 44|1@1+ (1,0) [0|0] "" OPELZAFIRA
- SG_ CentralLock_Button : 48|1@1+ (1,0) [0|0] "" OPELZAFIRA
- SG_ DDS_Button : 26|1@1+ (1,0) [0|0] "" OPELZAFIRA
- SG_ ESPOFF : 27|1@1+ (1,0) [0|0] "" OPELZAFIRA
+ SG_ Parktronic_Button : 14|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ RearFog_Button : 20|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ FrontFog_Button : 21|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ ParkingLight_EncoderSwitch : 22|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ LowBeam_EncoderSwitch : 23|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ Hazard_Button : 28|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ SeatHeating_Button : 31|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ Sport_Button : 32|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ Autolight_EncoderSwitch : 44|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ CentralLock_Button : 48|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ DDS_Button : 26|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ ESPOFF : 27|1@1+ (1,0) [0|0] ""  OPELZAFIRA
 
 BO_ 789 ID_315: 8 IPC
 
@@ -212,7 +215,7 @@ BO_ 832 UEC_FrontLamp_WarningStatus: 2 UEC
  SG_ FrontTurnRight : 6|1@1+ (1,0) [0|0] ""  OPELZAFIRA
  SG_ FrontTurnLeft : 7|1@1+ (1,0) [0|0] ""  OPELZAFIRA
  SG_ FrontParkingRight : 14|1@1+ (1,0) [0|0] ""  OPELZAFIRA
- SG_ FrontParkingLeft : 0|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ FrontParkingLeft : 15|1@1+ (1,0) [0|0] ""  OPELZAFIRA
 
 BO_ 848 UEC_WarningStatus: 4 UEC
  SG_ LightsFogOFF : 6|1@1- (1,0) [0|1] ""  OPELZAFIRA
@@ -220,10 +223,10 @@ BO_ 848 UEC_WarningStatus: 4 UEC
  SG_ WasherWaterLevel : 7|1@1+ (1,0) [0|0] ""  OPELZAFIRA
  SG_ CoolantLevel : 11|1@1+ (1,0) [0|0] ""  OPELZAFIRA
  SG_ OutdoorTemp : 10|11@0+ (0.125,-40) [0|0] "C"  OPELZAFIRA
- SG_ BrakeFluid : 13|1@1+ (1,0) [0|0] "" OPELZAFIRA
- 
+ SG_ BrakeFluid_NeedSensor : 13|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+
 BO_ 864 REC_RearLamp_WarningStatus: 3 REC
- SG_ Clutch_maybe_Wrong : 16|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ Clutch_maybe_Wrong : 16|1@1+ (1,0) [0|0] ""  OPELZAFIRA
  SG_ RearParkingRight : 0|1@1+ (1,0) [0|0] ""  OPELZAFIRA
  SG_ RearParkingLeft : 1|1@1+ (1,0) [0|0] ""  OPELZAFIRA
  SG_ RearReverseRight : 2|1@1+ (1,0) [0|0] ""  OPELZAFIRA
@@ -235,6 +238,12 @@ BO_ 864 REC_RearLamp_WarningStatus: 3 REC
  SG_ RearFogLeft : 8|1@1+ (1,0) [0|0] ""  OPELZAFIRA
  SG_ RearBrakeCenter : 15|1@1+ (1,0) [0|0] ""  OPELZAFIRA
  SG_ RearFogRight : 23|1@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ TrailerRightiumSignalLamp : 9|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ TrailerLeftiumSignalLamp : 10|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ TrailerRearLamp : 11|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ TrailerReversingLamp : 12|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ TrailerRearFogLamp : 13|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ TrailerBrakelight : 14|1@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 880 Warning_and_LampStatus: 8 OPELZAFIRA
  SG_ HandBrake : 8|1@1+ (1,0) [0|0] ""  OPELZAFIRA
@@ -493,7 +502,7 @@ VAL_ 848 LightsFogOFF 1 "On" 0 "Off" ;
 VAL_ 848 RearGear 1 "ON" 0 "OFF" ;
 VAL_ 848 WasherWaterLevel 0 "Normal" 1 "Low" ;
 VAL_ 848 CoolantLevel 0 "Normal" 1 "Low" ;
-VAL_ 848 BrakeFluid 0 "Normal" 1 "Low" ;
+VAL_ 848 BrakeFluid_NeedSensor 0 "Normal" 1 "Low" ;
 VAL_ 864 Clutch_maybe_Wrong 40 "Clutch Pressed" ;
 VAL_ 864 RearParkingRight 0 "OK" 1 "Error" ;
 VAL_ 864 RearParkingLeft 0 "OK" 1 "Error" ;
@@ -511,5 +520,5 @@ VAL_ 880 RearFogTelltale_IPC_maybe 0 "OFF" 1 "ON" ;
 VAL_ 1104 QH_Status 0 "OFF" 1 "Working" ;
 VAL_ 1104 QH_HeaterStatus 64 "Heats: 1" 128 "Heats: 2" 192 "Heats: 3" 255 "Heats:4 (All)" ;
 VAL_ 1328 TPMS_OK 40 "TPMS_OK" ;
-VAL_ 1328 TPMS_Status 41 "TPMS_ON" 6 "DDS_TireLow_RED" 7 "DDS_OK" ;
+VAL_ 1328 TPMS_Status 6 "DDS_TireLow_RED" 7 "DDS_OK" 41 "TPMS_ON" 5 "TireLow_from???" ;
 
