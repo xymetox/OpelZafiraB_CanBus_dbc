@@ -106,8 +106,6 @@ BO_ 325 EngineStatus: 8 CIM
  SG_ Oil_Level_YELLOW : 21|1@1+ (1,0) [0|0] ""  OPELZAFIRA
  SG_ SVS_Screw : 22|2@1+ (1,0) [0|0] ""  OPELZAFIRA
 
-BO_ 336 ID_150: 8 OPELZAFIRA
-
 BO_ 341 AC_Status: 8 DIS
  SG_ AC_Status : 0|8@1+ (1,0) [0|0] ""  OPELZAFIRA
  SG_ AC_Pressure : 8|8@1+ (1,0) [0|0] ""  OPELZAFIRA
