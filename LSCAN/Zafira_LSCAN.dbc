@@ -113,7 +113,7 @@ BO_ 341 AC_Status: 2 DIS
 BO_ 352 RemoteControlWindows: 4 CIM
  SG_ KeyNumber : 0|3@1+ (1,0) [0|0] ""  OPELZAFIRA
  SG_ KeyCode : 23|16@0+ (1,0) [0|0] ""  OPELZAFIRA
- SG_ RCWindows : 8|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ Buttons_RC : 8|8@1+ (1,0) [0|0] ""  OPELZAFIRA
  SG_ Battery_RC_Warning_forDIS : 3|1@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 368 Ignitionkey: 4 CIM
