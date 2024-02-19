@@ -76,8 +76,8 @@ BO_ 277 BrakeSwitch: 1 CIM
  SG_ BrakeSwitch1 : 2|1@1+ (1,0) [0|0] ""  OPELZAFIRA
  SG_ BrakeSwitch2 : 4|1@1+ (1,0) [0|0] ""  OPELZAFIRA
  SG_ ClutchSwitch : 1|1@1+ (1,0) [0|0] ""  OPELZAFIRA
- SG_ BrakeliightSwitch_Warning_forDIS : 6|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ BrakeliightSwitch2Warning_forDIS : 7|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BrakelightSwitch_Warning_forDIS : 6|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BrakelightSwitch2Warning_forDIS : 7|1@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 282 Gear: 7 CIM
  SG_ LeftDigit : 0|6@1+ (1,0) [0|0] ""  OPELZAFIRA
