@@ -98,13 +98,14 @@ BO_ 325 EngineStatus: 8 CIM
  SG_ EngineStatus1 : 4|4@1+ (1,0) [0|0] ""  OPELZAFIRA
  SG_ EngineStatus2 : 8|8@1+ (1,0) [0|0] ""  OPELZAFIRA
  SG_ TempCoolant : 24|8@1+ (1,-40) [0|0] " C"  OPELZAFIRA
- SG_ EngineStatus4 : 32|8@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ EngineStatus4 : 33|7@1+ (1,0) [0|0] ""  OPELZAFIRA
  SG_ CruiseControl : 40|8@1+ (1,0) [0|0] ""  OPELZAFIRA
  SG_ WinterMode : 2|1@1+ (1,0) [0|0] ""  OPELZAFIRA
  SG_ Sport_or_ESPONOFmaybe : 3|1@1+ (1,0) [0|0] ""  OPELZAFIRA
  SG_ Oil_Pressure_RED : 18|1@1+ (1,0) [0|0] ""  OPELZAFIRA
  SG_ Oil_Level_YELLOW : 21|1@1+ (1,0) [0|0] ""  OPELZAFIRA
  SG_ SVS_Screw : 22|2@1+ (1,0) [0|0] ""  OPELZAFIRA
+ SG_ SportMode : 32|1@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 341 AC_Status: 2 DIS
  SG_ AC_Status : 0|8@1+ (1,0) [0|0] ""  OPELZAFIRA
@@ -473,6 +474,7 @@ VAL_ 325 EngineStatus2 1 "Check Engine Off" 2 " Check Engine Flash" 3 "Check Eng
 VAL_ 325 CruiseControl 4 "inactive" 6 "active" ;
 VAL_ 325 WinterMode 4 "Winter Mode ON" 0 "Winter Mode OFF" ;
 VAL_ 325 SVS_Screw 1 "SVS Check Car Screw ON" 2 "SVS Check Car Screw Flash" 3 "SVS Check Car Screw OFF'" ;
+VAL_ 325 SportMode 0 "Sport Mode OFF" 1 "Sport Mode ON" ;
 VAL_ 341 AC_Status 0 "AC OFF" 2 "AC ON" ;
 VAL_ 368 IgnitionKey 32 "Key Not in Lock" 48 "Key Just Removed" 84 "Key In position Ignition (II) (After previous state)" 96 "Key Inserted (After previous state)" 112 "Key In Lock (After Ke  Is In 72H or 74H)" 114 "Key Is In position Comfort (I)" 116 "Key Is In position Ignition (II)" 118 "Key In position Starter (II+)" ;
 VAL_ 373 Left_HighBeamLight_Horn 0 "Lights&Horn OFF" 8 "Left SW PULL" 16 "Horn ON" 32 "Left SW PUSH" ;
